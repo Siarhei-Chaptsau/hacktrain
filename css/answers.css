@@ -1,0 +1,49 @@
+.answers {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.answers__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 40px;
+  color: #45515e;
+}
+
+.answers__item {
+  padding: 10px 0;
+}
+
+.answers__text {
+  margin: 0 20px 7px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@media (min-width: 660px) {
+  .answers__wrapper {
+    width: 660px;
+    padding-top: 60px;
+  }
+
+  .answers__item {
+    padding: 15px 0;
+  }
+
+  .answers__text {
+    margin: 0 30px 10px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 960px) {
+  .answers {
+    max-width: 1200px;  
+  }
+
+  .answers__wrapper {
+    width: 960px;
+  }
+}

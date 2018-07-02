@@ -1,0 +1,211 @@
+.page-title {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 237px;
+}
+
+.page-title__wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-title__text-container {
+  position: absolute;
+  width: 100%;
+  top: 8%;
+  left: 0;
+  z-index: 3;
+}
+
+.page-title__title {
+  display: block;
+  padding: 0;
+  margin: 0 20px 5px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 48px;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.page-title__content {
+  margin: 0 auto;
+  width: 280px;
+  padding: 15px 20px;
+}
+
+.page-title__btn {
+  width: 255px;
+  padding: 11px 10px 14px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+}
+
+.page-title__btn:hover {
+  background-color: #ffffff;
+  color: #d22856;
+}
+
+.page-title__btn:active {
+  color: #e06989;
+}
+
+/* анимация поезда */
+.page-title__wrapper-train {
+  position: relative;
+	height: 237px;
+	width: 320px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.page-title__background {
+	height: 237px;
+	width: 320px;
+	background: url('../img/bg.jpg');
+	background-size: cover;
+}
+
+.page-title__rails {
+	position: absolute;
+  height: 30px;
+  width: 320px;
+  bottom: 0;
+	background: url('../img/rails.png');
+	background-repeat: repeat-x;
+	background-position: top center;
+	background-size: contain;
+	animation: translateX 5s infinite linear both;
+}
+
+.page-title__train {
+	position: absolute;
+  height: 40px;
+  width: 320px;
+  right: 0;
+  bottom: 0;
+	background: url('../img/train.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: contain;
+}
+
+@keyframes translateX {
+	0% {background-position: 0 0;}
+	100% {background-position:  1200px 0;}
+}
+
+
+@media (min-width: 660px) {
+  .page-title {
+    min-height: 437px;
+    padding: 0;
+  }
+
+  .page-title__wrapper {
+    width: 660px;
+  }
+
+  .page-title__text-container {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .page-title__title {
+    font-size: 26px;
+  }
+
+  .page-title__content {
+    width: 300px;
+    padding: 20px 0 0 20px;
+  }
+
+  .page-title__btn {
+    width: 300px;
+    box-sizing: border-box;
+  }
+
+  /* анимация поезда */
+  .page-title__wrapper-train {
+  	height: 437px;
+  	width: 660px;
+  }
+
+  .page-title__background {
+  	height: 437px;
+  	width: 660px;
+  }
+
+  .page-title__rails {
+  	position: absolute;
+    height: 70px;
+    width: 660px;
+    bottom: 0;
+  }
+
+  .page-title__train {
+    height: 90px;
+    width: 660px;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+
+@media (min-width: 960px) {
+  .page-title {
+    max-width: 1200px;
+  }
+
+  .page-title {
+    min-height: 400px;
+  }
+
+  .page-title__wrapper {
+    width: 960px;
+  }
+
+  .page-title__content {
+    padding: 50px 0 0 10px;
+  }
+
+  .page-title__title {
+    font-size: 30px;
+    line-height: 60px;
+  }
+
+  .page-title__btn {
+    line-height: 18px;
+    font-weight: 700;
+    padding: 15px 12px 16px;
+    font-size: 21px;
+  }
+
+  /* анимация поезда */
+  .page-title__wrapper-train {
+  	height: 500px;
+  	width: 960px;
+  }
+
+  .page-title__background {
+  	height: 600px;
+  	width: 960px;
+  }
+
+  .page-title__rails {
+  	position: absolute;
+    height: 80px;
+    width: 960px;
+    bottom: 0;
+  }
+
+  .page-title__train {
+    height: 110px;
+    width: 960px;
+    right: 0;
+    bottom: 0;
+  }
+}
