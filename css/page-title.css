@@ -14,8 +14,36 @@
 .page-title__text-container {
   position: absolute;
   width: 100%;
-  top: 8%;
+  top: 3%;
   left: 0;
+  z-index: 3;
+}
+
+.page-title__wrapper::before {
+  position: absolute;
+  content: "";
+  top: 13%;
+  left: 5%;
+  width: 80px;
+  height: 50px;
+  background: url('../img/logo-LIAA.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 3;
+}
+
+.page-title__wrapper::after {
+  position: absolute;
+  content: "";
+  top: 14%;
+  right: 3%;
+  width: 90px;
+  height: 50px;
+  background: url('../img/logo-imaguru.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   z-index: 3;
 }
 
@@ -25,7 +53,7 @@
   margin: 0 20px 5px;
   text-align: center;
   font-size: 16px;
-  line-height: 48px;
+  line-height: 30px;
   font-weight: 100;
   color: #ffffff;
 }
@@ -37,9 +65,9 @@
 }
 
 .page-title__btn {
-  width: 255px;
-  padding: 11px 10px 14px;
-  border: 3px solid #ffffff;
+  width: 180px;
+  padding: 10px 10px 13px;
+  border: 2px solid #ffffff;
   color: #ffffff;
 }
 
@@ -108,14 +136,29 @@
     width: 660px;
   }
 
+  .page-title__wrapper::before {
+    top: 9%;
+    left: 5%;
+    width: 170px;
+    height: 120px;
+  }
+
+  .page-title__wrapper::after {
+    top: 9%;
+    right: 3%;
+    width: 200px;
+    height: 120px;
+  }
+
   .page-title__text-container {
     width: 100%;
-    top: 0;
+    top: 5%;
     left: 0;
   }
 
   .page-title__title {
     font-size: 26px;
+    line-height: 48px;
   }
 
   .page-title__content {
@@ -158,6 +201,25 @@
 @media (min-width: 960px) {
   .page-title {
     max-width: 1200px;
+  }
+
+  .page-title__wrapper::before {
+    top: 12%;
+    left: 7%;
+    width: 170px;
+    height: 120px;
+  }
+
+  .page-title__wrapper::after {
+    top: 12%;
+    right: 5%;
+    width: 200px;
+    height: 120px;
+  }
+
+  .page-title__text-container {
+    width: 100%;
+    left: 0;
   }
 
   .page-title {
